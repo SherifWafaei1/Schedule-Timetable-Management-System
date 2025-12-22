@@ -73,7 +73,12 @@ class Database {
             $this->conn = new PDO($dsn, $this->username, $this->password, $this->options);
         } catch(PDOException $exception) {
             error_log("Connection error: " . $exception->getMessage());
-            // Throw a generic message to avoid leaking credentials, check server logs for details
+            // In debug mode, surface the real PDO message to help with diagnosing on Render.
+            $debug = getenv('APP_DEBUG');
+            if ($debug === '1' || strtolower($debug) === 'true') {
+                throw new Exception("Database connection failed: " . $exception->getMessage());
+            }
+            // Generic message for production
             throw new Exception("Database connection failed");
         }
         
