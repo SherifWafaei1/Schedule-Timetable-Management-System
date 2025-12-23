@@ -1,0 +1,139 @@
+/* 
+ * Login Page Styles 
+ * Optimized for absolute centering and collision resistance 
+ */
+
+* {
+    box-sizing: border-box !important;
+}
+
+/* Base Body Setup */
+body.login-page {
+    background: linear-gradient(135deg, #6366f1, #a855f7) !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    font-family: 'Inter', sans-serif !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow-x: hidden !important;
+    /* Allow vertical scroll if card is tall, but keep content centered */
+}
+
+/* Force-center all potential wrappers (main, container, etc.) */
+body.login-page .login-container,
+body.login-page main,
+body.login-page #wrapper {
+    flex: 1 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 2rem !important;
+    position: static !important;
+    transform: none !important;
+    max-width: none !important;
+}
+
+/* Hide footer globally for login page */
+body.login-page .footer,
+body.login-page footer {
+    display: none !important;
+}
+
+/* The Login Card */
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: none;
+    background: #ffffff;
+    z-index: 10;
+}
+
+.login-header {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: #ffffff;
+    border: none;
+    padding: 3rem 2rem !important;
+}
+
+.login-header h3 {
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.5rem;
+}
+
+.login-card .card-body {
+    padding: 3rem !important;
+}
+
+/* Form Elements */
+.form-label {
+    font-size: 0.875rem;
+    color: #475569;
+    margin-bottom: 0.75rem;
+}
+
+.input-group-text {
+    background-color: #f8fafc;
+    border-color: #e2e8f0;
+    color: #94a3b8;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-radius: 12px 0 0 12px !important;
+}
+
+.form-control {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 0.875rem 1.25rem;
+    border-radius: 12px !important;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+    outline: none;
+}
+
+.btn-login {
+    background: linear-gradient(to right, #6366f1, #7c3aed);
+    border: none;
+    color: #ffffff;
+    padding: 0.875rem !important;
+    border-radius: 12px !important;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-login:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+    color: #ffffff;
+}
+
+.badge {
+    background-color: #f1f5f9 !important;
+    color: #475569 !important;
+    font-weight: 500;
+    padding: 0.6rem 1rem !important;
+    border-radius: 8px !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+.vr {
+    opacity: 0.15;
+}
+
+/* Toggle Password Visibility Button Alignment */
+#togglePassword {
+    border-radius: 0 12px 12px 0 !important;
+    border-color: #e2e8f0;
+}

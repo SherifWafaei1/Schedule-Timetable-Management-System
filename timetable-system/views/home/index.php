@@ -70,7 +70,7 @@
                     </p>
                     <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
                         <a href="login.php" class="btn-premium fs-5">Get Started Free <i class="fas fa-arrow-right ms-2"></i></a>
-                        <a href="#features" class="btn btn-outline-light rounded-pill px-4 py-3 fw-700 border-opacity-25">Explore Features</a>
+                        <a href="#features" class="btn btn-outline-light rounded-pill px-4 py-3 fw-700 border-opacity-25 text-black-50">Explore Features</a>
                     </div>
                 </div>
                 <div class="col-lg-5 d-none d-lg-block">
@@ -90,12 +90,12 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-800 mb-3">Engineered for Excellence</h2>
-                <p class="text-white-50">Streamlined tools for administrators, teachers, and students.</p>
+                <p class="text-black-50">Streamlined tools for administrators, teachers, and students.</p>
             </div>
             <div class="row g-4">
                 <?php
                 $feats = [
-                    ['icon' => 'fa-shield-halved', 'title' => 'Secure Auth', 'desc' => 'MVC-driven security with robust session handling and CSRF protection.'],
+                    ['icon' => 'fa-shield-alt', 'title' => 'Secure Auth', 'desc' => 'MVC-driven security with robust session handling and CSRF protection.'],
                     ['icon' => 'fa-calendar-days', 'title' => 'Dynamic Views', 'desc' => 'Seamless month, week, and day calendar views with real-time updates.'],
                     ['icon' => 'fa-brain', 'title' => 'Conflict Detection', 'desc' => 'Intelligent room and resource allocation to prevent scheduling overlaps.'],
                     ['icon' => 'fa-chart-pie', 'title' => 'Admin Insights', 'desc' => 'Rich dashboard with system-wide analytics and resource tracking.'],
@@ -116,9 +116,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-5 mt-5 border-top border-white border-opacity-10">
+    <footer class="py-5 mt-5 border-top border-black border-opacity-10">
         <div class="container text-center">
-            <p class="text-white-50">© <?php echo date('Y'); ?> <?php echo APP_NAME; ?> Management System. Refactored for Clean Code.</p>
+            <p class="text-black-50">© <?php echo date('Y'); ?> <?php echo APP_NAME; ?> Management System. Refactored for Clean Code.</p>
         </div>
     </footer>
 

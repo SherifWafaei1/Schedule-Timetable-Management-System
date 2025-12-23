@@ -1,0 +1,46 @@
+﻿PHPUnit 9.6.31 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.2.12
+Configuration: C:\xampp\htdocs\timetable-system\phpunit.xml
+
+Test 'AuthServiceTest::testLoginWithInvalidUser' started
+Test 'AuthServiceTest::testLoginWithInvalidUser' ended
+Test 'AuthServiceTest::testLogout' started
+Test 'AuthServiceTest::testLogout' ended
+Test 'FlashMessageTest::testSetAndGet' started
+Test 'FlashMessageTest::testSetAndGet' ended
+Test 'FlashMessageTest::testHasFlash' started
+Test 'FlashMessageTest::testHasFlash' ended
+Test 'FlashMessageTest::testGetReturnsNullIfNone' started
+Test 'FlashMessageTest::testGetReturnsNullIfNone' ended
+Test 'InputValidatorTest::testSanitizeEncodesHtml' started
+Test 'InputValidatorTest::testSanitizeEncodesHtml' ended
+Test 'InputValidatorTest::testSanitizeTrimsWhitespace' started
+Test 'InputValidatorTest::testSanitizeTrimsWhitespace' ended
+Test 'InputValidatorTest::testIsValidEmail' started
+Test 'InputValidatorTest::testIsValidEmail' ended
+Test 'InputValidatorTest::testValidateRequired' started
+Test 'InputValidatorTest::testValidateRequired' ended
+Test 'SessionManagerTest::testSingletonInstance' started
+Test 'SessionManagerTest::testSingletonInstance' ended
+Test 'SessionManagerTest::testSetAndGet' started
+Test 'SessionManagerTest::testSetAndGet' ended
+Test 'SessionManagerTest::testHas' started
+Test 'SessionManagerTest::testHas' ended
+Test 'SessionManagerTest::testRemove' started
+Test 'SessionManagerTest::testRemove' ended
+Test 'SessionManagerTest::testFlashMessaging' started
+Test 'SessionManagerTest::testFlashMessaging' ended
+
+
+Time: 00:00.047, Memory: 6.00 MB
+
+There was 1 error:
+
+1) FlashMessageTest::testHasFlash
+Error: Call to undefined method FlashMessage::hasFlash()
+
+C:\xampp\htdocs\timetable-system\tests\Unit\FlashMessageTest.php:32
+
+ERRORS!
+Tests: 14, Assertions: 22, Errors: 1.
